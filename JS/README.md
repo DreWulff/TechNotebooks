@@ -27,7 +27,7 @@
   - [Summary:](#summary-1)
 - [3. Frameworks](#3-frameworks)
   - [React](#react)
-  - [References](#references)
+- [References](#references)
 
 # Introduction
 This notebook is written with the intention of learning JavaScript, Node.js, React, among other things.  
@@ -211,6 +211,6 @@ Is is an **open-source and cross-platform JavaScript runtime environment** that 
 ## React
 Multiplatform app UI framework for cross-platform applications.
 
-## References
+# References
 * [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [W3Schools - JavaScript](https://www.w3schools.com/js/)
