@@ -5,7 +5,6 @@ For more information make sure to investigate further on each topic as needed, a
 # Table of Contents
 - [Javascript](#javascript)
 - [Table of Contents](#table-of-contents)
-    - [Sex](#sex)
 - [1. Introduction: What is JavaScript](#1-introduction-what-is-javascript)
   - [Description](#description)
   - [Setup](#setup)
@@ -33,13 +32,6 @@ For more information make sure to investigate further on each topic as needed, a
 - [3. Frameworks](#3-frameworks)
   - [React](#react)
 - [References](#references)
-
-<details>
-  <summary></summary>
-  ### Sex
-  * Terminally
-  * Online
-</details>
 
 # 1. Introduction: What is JavaScript
 
