@@ -1,7 +1,12 @@
+# Javascript
+This notebook is written with the intention of learning JavaScript, Node.js, React, among other things.  
+For more information make sure to investigate further on each topic as needed, and/or take a look at the pages referenced in the [References section](#references).
+
 # Table of Contents
+- [Javascript](#javascript)
 - [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
-- [1. What is JavaScript](#1-what-is-javascript)
+    - [Sex](#sex)
+- [1. Introduction: What is JavaScript](#1-introduction-what-is-javascript)
   - [Description](#description)
   - [Setup](#setup)
     - [Summary:](#summary)
@@ -29,11 +34,14 @@
   - [React](#react)
 - [References](#references)
 
-# Introduction
-This notebook is written with the intention of learning JavaScript, Node.js, React, among other things.  
-For more information make sure to investigate further on each topic as needed, and/or take a look at the pages referenced in the [References section](#references).
+<details>
+  <summary></summary>
+  ### Sex
+  * Terminally
+  * Online
+</details>
 
-# 1. What is JavaScript
+# 1. Introduction: What is JavaScript
 
 ## Description
 
@@ -133,7 +141,7 @@ if (condition) {
 ```
 
 ### Ternary operator
-The ternary operator is an expression that follows the structure `[condition] ? [x] : [y]` where the result of the expression is `x` if the `condition` is true, or `y` otherwise.
+The ternary operator is an expression that follows the structure `condition ? x : y` where the result of the expression is `x` if the `condition` is true, or `y` otherwise.
 ```js
 let condition = false;
 let x = condition? 5 : 6;
@@ -192,14 +200,21 @@ function multiply(num1, num2) {
 ```
 
 ## Events
-
+One of the main attractive points of JavaScript is its use of Events.  
+Unnamed functions can be assigned to diverse events, executing the functions once the event happens.  
+In this example an `alert()` call is made when the `click` event happens on the `html` object.
+```js
+document.querySelector("html").addEventListener("click", () => {
+  alert("Clicked");
+});
+```
 
 # 2. Node.js
 Official documentation: [Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 
 ## Description
 
-Is is an **open-source and cross-platform JavaScript runtime environment** that handles asynchronous events without creating new threads, allowing an app to manage multiple connections in a single thread.
+It is an **open-source and cross-platform JavaScript runtime environment** that handles asynchronous events without creating new threads, allowing an app to manage multiple connections in a single thread.
 
 ## Summary:
 * Runtime environment for JavaScript.

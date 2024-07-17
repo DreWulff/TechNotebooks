@@ -8,6 +8,10 @@ It also helps me practice with Markdown.
 | :--: |
 | *Lord Hovart from Dungeon Siege* |
 
+## WIP
+* JS/Node/React
+* .NET
+
 ## TODO:
 * AWS
 * .NET
