@@ -6,8 +6,9 @@
     - [.NET Standard](#net-standard)
     - [C#](#c)
 - [Frameworks](#frameworks)
-    - [Maui](#maui)
-    - [WPF](#wpf)
+  - [.NET 8.0](#net-80)
+  - [Maui](#maui)
+  - [WPF](#wpf)
 - [Making a .NET Maui App](#making-a-net-maui-app)
 
 # What is .NET
@@ -28,11 +29,12 @@ It contains:
 ### C#
 
 # Frameworks
+## .NET 8.0
 
-### Maui
+## Maui
 Multiplatform app UI framework for cross-platform applications.
 
-### WPF
+## WPF
 An UI framework that allows the creation of desktop client applications for Windows.    
 Is is a subset of the **.NET Framework**.
 
