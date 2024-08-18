@@ -219,6 +219,7 @@ To install Node.js follow the instructions given in [How to install Node.js](htt
 * Asynchronous single-threaded behaviour.
 
 # 4. Frameworks
+This section presents a brief introduction to a list of selected frameworks. For more details on each one read the `.md` files associated to each one.
 
 ## 4.1. React
 Multiplatform app UI framework for cross-platform applications.
