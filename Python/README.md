@@ -17,6 +17,10 @@ For more information make sure to investigate further on each topic as needed, a
     - [2.1.4. Array](#214-array)
   - [2.2. Comments](#22-comments)
   - [2.3. Operators](#23-operators)
+    - [Basic mathematical operations](#basic-mathematical-operations)
+    - [Comparisons](#comparisons)
+    - [Logical operators](#logical-operators)
+    - [Other mathematical operations](#other-mathematical-operations)
   - [2.4. Conditionals](#24-conditionals)
     - [2.4.1. `if`](#241-if)
     - [2.5. Ternary operator](#25-ternary-operator)
@@ -87,34 +91,74 @@ myArray = [
 ```
 
 ## 2.2. Comments
+These are pieces of text that can be written in a script to document the behaviour of the code and make it easier to understand for whomever reads the code later.  
+**Comments are not executed.**
 ```py
 # This is a comment
+x = 5  # This is a comment
 
-def foo(bar):
-    '''
-    This can also be a comment but is
-    usually used for docstrings, which
-    are strings used to documents a
-    module, class, function or method
-    so developers can understand what
-    it does.
+'''
+This can also be a comment but is
+usually used for docstrings.
 
-    We'll take a look at those later.
-    '''
+We'll take a look at those later.
+'''
 ```
 
 ## 2.3. Operators
+### Basic mathematical operations
+* **Addition** `+`
+* **Substraction** `-`
+* **Multiplication** `*`
+* **Division** `/`
 ```py
-# Basic mathematical operations
+# Examples
 addition       = 1 + 2  # 3
 substraction   = 3 - 4  # -1
 multiplication = 5 * 6  # 30
 division       = 8 / 4  # 2
+```
 
-# Comparison
-isEqual    = 4 == 5     # False
-isNotEqual = 4 != 5     # True
-opposite   = not True   # False
+### Comparisons
+Values can be compared through the following operators:
+* **Equal** `==`
+* **Not Equal** `!=`
+* **Greater Than** `>`
+* **Lesser Than** `<`
+* **Greater or Equal** `>=`
+* **Lesser or Equal** `<=`
+```py
+# Examples
+x = 5
+y = 3
+
+is_equal      = x == y  # False
+is__not_equal = x != y  # True
+greater       = x > y   # True
+lesser        = x < y   # False
+greater_equal = x >= y  # True
+lesser_equal  = x <= y  # False
+```
+
+### Logical operators
+* `not`: Result is the opposite logical value of the value given.
+* `and`: Result is `True` only if both elements of the expression are `True`.
+* `or`: Result is `True` if at least one of both elements of the expression is `True`.
+```py
+# Examples
+opposite     = not True       # False
+and_operator = True and False # False
+or_operator  = True or False  # True
+```
+### Other mathematical operations
+* **Modulo** `%`: Results in the remainder of performing a division between both elements.
+* **Exponent** `**`: Results in the first element to the power of the second element.
+* **Floor division** `//`: Results in the integer part of the division between both elements.
+```py
+# Examples
+module   = 12 % 5  # 2
+exponent = 2 ** 4  # 16
+floor    = 7 // 3  # 2
 ```
 
 ## 2.4. Conditionals
@@ -122,6 +166,10 @@ opposite   = not True   # False
 ### 2.4.1. `if`
 ```py
 if (condition):
+    # code block
+elif (another_condition):
+    # code block
+else:
     # code block
 ```
 
@@ -143,7 +191,6 @@ while (condition):
 
 ### 2.6.2. `for`
 ```py
-# for/in
 const person = {fname:"John", lname:"Doe", age:25}
 
 for trait in person:
