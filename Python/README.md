@@ -28,9 +28,9 @@ For more information make sure to investigate further on each topic as needed, a
     - [2.6.1. `while`](#261-while)
     - [2.6.2. `for`](#262-for)
   - [2.7. Functions](#27-functions)
-    - [Optional arguments](#optional-arguments)
-    - [Docstrings](#docstrings)
-    - [Type hinting](#type-hinting)
+    - [2.7.1 Optional arguments](#271-optional-arguments)
+    - [2.7.2 Docstrings](#272-docstrings)
+    - [2.7.3 Type hinting](#273-type-hinting)
 - [References](#references)
 
 # 1. Introduction: What is Python
@@ -206,7 +206,7 @@ def multiply(num1, num2):
 
 # >> multiply(3, 6) -> 18
 ```
-### Optional arguments
+### 2.7.1 Optional arguments
 Optional arguments can be defined by assigning default values to these through the following structure:
 
 ```py
@@ -220,7 +220,7 @@ In the given example the function can be called either with one or two arguments
 When called with just one, the variable `num2` will consider a value of `5` by default.
 Positioning of the arguments is relevant as optional arguments are always defined after the ones required.
 
-### Docstrings
+### 2.7.2 Docstrings
 As mentioned before in the [Comments](#22-comments) section, a function/method/class can be documented so that developers can quickly understand what is the purpose of said item. This is done through a `docstring`, and it is usually defined in the following way:
 ```py
 def foo(bar):
@@ -233,7 +233,7 @@ def foo(bar):
     '''
 ```
 
-### Type hinting
+### 2.7.3 Type hinting
 Python is weakly-typed, but the type of the value returned by a function and the types required for its arguments can be **hinted at** in the following manner:
 ```py
 def add(first: int, second: int) -> int:
@@ -245,5 +245,3 @@ It is important to consider that **the type of this values can be different to t
 Still, ***the use of hint typing alongisde docstrings can guide a developer through the correct use of functions/classes/methods/etc.***
 
 # References
-* [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [W3Schools - JavaScript](https://www.w3schools.com/js/)
