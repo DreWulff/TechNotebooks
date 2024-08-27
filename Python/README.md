@@ -36,7 +36,7 @@ For more information make sure to investigate further on each topic as needed, a
 # 1. Introduction: What is Python
 
 ## 1.1. Description
-JavaScript is a multiparadigm general-purpose interpreted programming language that is dynamically typed and garbage-collected. 
+Python is a multiparadigm general-purpose interpreted programming language that is dynamically typed and garbage-collected. 
 
 ## 1.2. Setup
 To write and execute JavaScript code only two things are needed:
