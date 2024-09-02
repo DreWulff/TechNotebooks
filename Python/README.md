@@ -8,28 +8,32 @@ For more information make sure to investigate further on each topic as needed, a
 - [1. Introduction: What is Python](#1-introduction-what-is-python)
   - [1.1. Description](#11-description)
   - [1.2. Setup](#12-setup)
-  - [1.3. Summary:](#13-summary)
+  - [1.3. Summary](#13-summary)
 - [2. Basics](#2-basics)
   - [2.1. Variables](#21-variables)
     - [2.1.1. Number](#211-number)
     - [2.1.2. String](#212-string)
     - [2.1.3. Boolean](#213-boolean)
-    - [2.1.4. Array](#214-array)
   - [2.2. Comments](#22-comments)
   - [2.3. Operators](#23-operators)
     - [Basic mathematical operations](#basic-mathematical-operations)
     - [Comparisons](#comparisons)
     - [Logical operators](#logical-operators)
     - [Other mathematical operations](#other-mathematical-operations)
-  - [2.4. Conditionals](#24-conditionals)
-    - [2.4.1. `if`](#241-if)
-    - [2.5. Ternary operator](#25-ternary-operator)
-  - [2.6. Loops](#26-loops)
-    - [2.6.1. `while`](#261-while)
-    - [2.6.2. `for`](#262-for)
-  - [2.7. Functions](#27-functions)
-    - [Optional arguments](#optional-arguments)
-    - [Docstrings](#docstrings)
+  - [2.4. Iterables](#24-iterables)
+    - [2.4.1 Arrays](#241-arrays)
+    - [Tuples](#tuples)
+    - [Sets](#sets)
+    - [Dictionaries](#dictionaries)
+  - [2.5. Conditionals](#25-conditionals)
+    - [2.5.1. `if`](#251-if)
+    - [2.6. Ternary operator](#26-ternary-operator)
+  - [2.7. Loops](#27-loops)
+    - [2.7.1. `while`](#271-while)
+    - [2.7.2. `for`](#272-for)
+  - [2.8. Functions](#28-functions)
+    - [2.8.1. Optional arguments](#281-optional-arguments)
+    - [2.8.2. Docstrings](#282-docstrings)
     - [Type hinting](#type-hinting)
 - [References](#references)
 
@@ -43,7 +47,7 @@ To write and execute JavaScript code only two things are needed:
 * A text editor with which to write a .py file.
 * A Python runtime environment.
 
-## 1.3. Summary:
+## 1.3. Summary
 * Multiparadigm.
 * Dynamically and weakly typed.
 * High-level.
@@ -75,19 +79,6 @@ Boolean values `True` and `False` always require the first letter to be capitali
 ```py
 x = True
 x = False
-```
-
-### 2.1.4. Array
-An array doesn't have restrictions in the types of the data that it contains, and when defined it is encased in `[]`.  
-To access a value of an array one can use a `myArray[x]` statement where `x` refers to the index of the accessed value.  
-
-```py
-myArray = [
-    '1',
-    7,
-    True
-]
-# >> x = myArray[1] -> 7
 ```
 
 ## 2.2. Comments
@@ -160,10 +151,29 @@ module   = 12 % 5  # 2
 exponent = 2 ** 4  # 16
 floor    = 7 // 3  # 2
 ```
+## 2.4. Iterables
 
-## 2.4. Conditionals
+### 2.4.1 Arrays
+An array doesn't have restrictions in the types of the data that it contains, and when defined it is encased in `[]`.  
+To access a value of an array one can use a `myArray[x]` statement where `x` refers to the index of the accessed value.  
 
-### 2.4.1. `if`
+```py
+myArray = [
+    '1',
+    7,
+    True
+]
+# >> x = myArray[1] -> 7
+```
+### Tuples
+
+### Sets
+
+### Dictionaries
+
+## 2.5. Conditionals
+
+### 2.5.1. `if`
 ```py
 if (condition):
     # code block
@@ -173,7 +183,7 @@ else:
     # code block
 ```
 
-### 2.5. Ternary operator
+### 2.6. Ternary operator
 The ternary operator is an expression that follows the structure `x if condition else y` where the result of the expression is `x` if the `condition` is true, or `y` otherwise.
 ```py
 condition = False
@@ -182,14 +192,14 @@ x = 5 if condition else 6
 # >> x -> 6
 ```
 
-## 2.6. Loops
-### 2.6.1. `while`
+## 2.7. Loops
+### 2.7.1. `while`
 ```py
 while (condition):
     # code block
 ```
 
-### 2.6.2. `for`
+### 2.7.2. `for`
 ```py
 const person = {fname:"John", lname:"Doe", age:25}
 
@@ -197,7 +207,7 @@ for trait in person:
     # code block
 ```
 
-## 2.7. Functions
+## 2.8. Functions
 Python functions follow the structure `def name ([args,]):`. Example:
 ```py
 def multiply(num1, num2):
@@ -206,7 +216,7 @@ def multiply(num1, num2):
 
 # >> multiply(3, 6) -> 18
 ```
-### Optional arguments
+### 2.8.1. Optional arguments
 Optional arguments can be defined by assigning default values to these through the following structure:
 
 ```py
@@ -220,7 +230,7 @@ In the given example the function can be called either with one or two arguments
 When called with just one, the variable `num2` will consider a value of `5` by default.
 Positioning of the arguments is relevant as optional arguments are always defined after the ones required.
 
-### Docstrings
+### 2.8.2. Docstrings
 As mentioned before in the [Comments](#22-comments) section, a function/method/class can be documented so that developers can quickly understand what is the purpose of said item. This is done through a `docstring`, and it is usually defined in the following way:
 ```py
 def foo(bar):
