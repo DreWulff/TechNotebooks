@@ -34,13 +34,13 @@ For more information make sure to investigate further on each topic as needed, a
   - [2.8. Functions](#28-functions)
     - [2.8.1. Optional arguments](#281-optional-arguments)
     - [2.8.2. Docstrings](#282-docstrings)
-    - [Type hinting](#type-hinting)
+    - [2.7.3 Type hinting](#273-type-hinting)
 - [References](#references)
 
 # 1. Introduction: What is Python
 
 ## 1.1. Description
-JavaScript is a multiparadigm general-purpose interpreted programming language that is dynamically typed and garbage-collected. 
+Python is a multiparadigm general-purpose interpreted programming language that is dynamically typed and garbage-collected. 
 
 ## 1.2. Setup
 To write and execute JavaScript code only two things are needed:
@@ -243,7 +243,7 @@ def foo(bar):
     '''
 ```
 
-### Type hinting
+### 2.7.3 Type hinting
 Python is weakly-typed, but the type of the value returned by a function and the types required for its arguments can be **hinted at** in the following manner:
 ```py
 def add(first: int, second: int) -> int:
@@ -255,5 +255,3 @@ It is important to consider that **the type of this values can be different to t
 Still, ***the use of hint typing alongisde docstrings can guide a developer through the correct use of functions/classes/methods/etc.***
 
 # References
-* [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [W3Schools - JavaScript](https://www.w3schools.com/js/)
