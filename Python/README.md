@@ -166,8 +166,11 @@ myArray = [
 # >> x = myArray[1] -> 7
 ```
 ### Tuples
+A tuple is like an array, but it is not mutable after definition. When defined it is encased in `()`.
+To access a value in a tuple
 
 ### Sets
+
 
 ### Dictionaries
 
